@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		A6D368BC1D6FA6C60097CB3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368BB1D6FA6C60097CB3A /* main.m */; };
 		A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368BE1D6FA6C60097CB3A /* AppDelegate.m */; };
-		A6D368C21D6FA6C60097CB3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368C11D6FA6C60097CB3A /* ViewController.m */; };
-		A6D368C51D6FA6C60097CB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368C31D6FA6C60097CB3A /* Main.storyboard */; };
 		A6D368C71D6FA6C60097CB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D368C61D6FA6C60097CB3A /* Assets.xcassets */; };
 		A6D368CA1D6FA6C60097CB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368C81D6FA6C60097CB3A /* LaunchScreen.storyboard */; };
+		A6D368DF1D6FA9440097CB3A /* AccessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368DE1D6FA9440097CB3A /* AccessManager.m */; };
+		A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */; };
+		A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */; };
+		A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,18 @@
 		A6D368BB1D6FA6C60097CB3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6D368BD1D6FA6C60097CB3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6D368BE1D6FA6C60097CB3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A6D368C01D6FA6C60097CB3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A6D368C11D6FA6C60097CB3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A6D368C41D6FA6C60097CB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6D368C61D6FA6C60097CB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D368C91D6FA6C60097CB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6D368CB1D6FA6C60097CB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D368DC1D6FA91D0097CB3A /* NetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConstants.h; sourceTree = "<group>"; };
+		A6D368DD1D6FA9440097CB3A /* AccessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessManager.h; sourceTree = "<group>"; };
+		A6D368DE1D6FA9440097CB3A /* AccessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessManager.m; sourceTree = "<group>"; };
+		A6D368E11D6FA9AF0097CB3A /* BaseRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestFactory.h; sourceTree = "<group>"; };
+		A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestFactory.m; sourceTree = "<group>"; };
+		A6D368E41D6FAA230097CB3A /* DefaultsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultsConstants.h; sourceTree = "<group>"; };
+		A6D368E61D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingAnimatedTutorialViewController.h; sourceTree = "<group>"; };
+		A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingAnimatedTutorialViewController.m; sourceTree = "<group>"; };
+		A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +66,8 @@
 		A6D368B91D6FA6C60097CB3A /* Friendship-UP */ = {
 			isa = PBXGroup;
 			children = (
-				A6D368BD1D6FA6C60097CB3A /* AppDelegate.h */,
-				A6D368BE1D6FA6C60097CB3A /* AppDelegate.m */,
-				A6D368C01D6FA6C60097CB3A /* ViewController.h */,
-				A6D368C11D6FA6C60097CB3A /* ViewController.m */,
-				A6D368C31D6FA6C60097CB3A /* Main.storyboard */,
-				A6D368C61D6FA6C60097CB3A /* Assets.xcassets */,
-				A6D368C81D6FA6C60097CB3A /* LaunchScreen.storyboard */,
-				A6D368CB1D6FA6C60097CB3A /* Info.plist */,
+				A6D368D31D6FA7B10097CB3A /* Classes */,
+				A6D368D11D6FA7770097CB3A /* Resources */,
 				A6D368BA1D6FA6C60097CB3A /* Supporting Files */,
 			);
 			path = "Friendship-UP";
@@ -74,9 +76,125 @@
 		A6D368BA1D6FA6C60097CB3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6D368CB1D6FA6C60097CB3A /* Info.plist */,
 				A6D368BB1D6FA6C60097CB3A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6D368D11D6FA7770097CB3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368E51D6FAA380097CB3A /* Fonts */,
+				A6D368C81D6FA6C60097CB3A /* LaunchScreen.storyboard */,
+				A6D368C61D6FA6C60097CB3A /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A6D368D21D6FA7A60097CB3A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368BD1D6FA6C60097CB3A /* AppDelegate.h */,
+				A6D368BE1D6FA6C60097CB3A /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		A6D368D31D6FA7B10097CB3A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368D21D6FA7A60097CB3A /* Application */,
+				A6D368D41D6FA7D70097CB3A /* Categories */,
+				A6D368D51D6FA7DF0097CB3A /* Models */,
+				A6D368D61D6FA7EF0097CB3A /* Services */,
+				A6D368D71D6FA7FA0097CB3A /* Constants */,
+				A6D368D81D6FA8000097CB3A /* Views and Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A6D368D41D6FA7D70097CB3A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A6D368D51D6FA7DF0097CB3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A6D368D61D6FA7EF0097CB3A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368DB1D6FA90A0097CB3A /* Network Managers */,
+				A6D368E01D6FA96B0097CB3A /* Request Factories */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		A6D368D71D6FA7FA0097CB3A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368E41D6FAA230097CB3A /* DefaultsConstants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		A6D368D81D6FA8000097CB3A /* Views and Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368DA1D6FA8720097CB3A /* Base Controllers */,
+				A6D368D91D6FA8540097CB3A /* Login Flow */,
+			);
+			name = "Views and Controllers";
+			sourceTree = "<group>";
+		};
+		A6D368D91D6FA8540097CB3A /* Login Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */,
+				A6D368E61D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.h */,
+				A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */,
+			);
+			name = "Login Flow";
+			sourceTree = "<group>";
+		};
+		A6D368DA1D6FA8720097CB3A /* Base Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Base Controllers";
+			sourceTree = "<group>";
+		};
+		A6D368DB1D6FA90A0097CB3A /* Network Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368DC1D6FA91D0097CB3A /* NetworkConstants.h */,
+				A6D368DD1D6FA9440097CB3A /* AccessManager.h */,
+				A6D368DE1D6FA9440097CB3A /* AccessManager.m */,
+			);
+			name = "Network Managers";
+			sourceTree = "<group>";
+		};
+		A6D368E01D6FA96B0097CB3A /* Request Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A6D368E11D6FA9AF0097CB3A /* BaseRequestFactory.h */,
+				A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */,
+			);
+			name = "Request Factories";
+			sourceTree = "<group>";
+		};
+		A6D368E51D6FAA380097CB3A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +228,7 @@
 				TargetAttributes = {
 					A6D368B61D6FA6C50097CB3A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = J69KN42852;
 					};
 				};
 			};
@@ -136,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */,
 				A6D368CA1D6FA6C60097CB3A /* LaunchScreen.storyboard in Resources */,
 				A6D368C71D6FA6C60097CB3A /* Assets.xcassets in Resources */,
-				A6D368C51D6FA6C60097CB3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +268,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D368C21D6FA6C60097CB3A /* ViewController.m in Sources */,
+				A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */,
 				A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */,
+				A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */,
 				A6D368BC1D6FA6C60097CB3A /* main.m in Sources */,
+				A6D368DF1D6FA9440097CB3A /* AccessManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A6D368C31D6FA6C60097CB3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6D368C41D6FA6C60097CB3A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A6D368C81D6FA6C60097CB3A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,8 +376,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Friendship-UP/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobile-dev.Friendship-UP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,8 +389,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Friendship-UP/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobile-dev.Friendship-UP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +417,7 @@
 				A6D368D01D6FA6C60097CB3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
