@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+inhibit_all_warnings!
+
+target 'Friendship-UP' do
+
+pod 'VK-ios-sdk'
+pod 'MBProgressHUD'
+pod 'SVPullToRefresh'
+pod 'SDWebImage'
+pod 'Reachability'
+
+end
+

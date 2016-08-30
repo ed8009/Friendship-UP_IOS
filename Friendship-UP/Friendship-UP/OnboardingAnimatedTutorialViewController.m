@@ -7,8 +7,13 @@
 //
 
 #import "OnboardingAnimatedTutorialViewController.h"
+#import <VKSdk.h>
+#import "VKManager.h"
+#import "AIRVKSdkDelegate.h"
 
-@interface OnboardingAnimatedTutorialViewController ()
+
+
+@interface OnboardingAnimatedTutorialViewController () <AIRVKSdkDelegate2>
 
 @end
 
@@ -16,22 +21,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [VKManager sessionVK];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)vkSdkShouldPresentViewController2:(UIViewController *)controller {
+    //[self presentViewController:controller animated:YES completion:nil];
+     [[[[[UIApplication sharedApplication] delegate] window] rootViewController]presentViewController:controller animated:YES completion:nil];
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)authorization:(id)sender {
+    [VKManager authorizationVK];
+    
 }
-*/
+
+- (IBAction)logout:(id)sender {
+    [VKManager logoutVK];
+    
+}
+
+
 
 @end
