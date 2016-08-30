@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6D0A2F8971DC3FEA209A445FFDA480C61CB87E14",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6D0A2F8971DC3FEA209A445FFDA480C61CB87E14" : 0,
+    "7D9E0D071BBDBD19D976E55F8D870C04949EB147" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FAF29717-DF36-4361-8465-ADFE79E20E66",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6D0A2F8971DC3FEA209A445FFDA480C61CB87E14" : "IOS\/",
+    "7D9E0D071BBDBD19D976E55F8D870C04949EB147" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Friendship-UP",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Friendship-UP\/Friendship-UP.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ed8009\/Friendship-UP_IOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D0A2F8971DC3FEA209A445FFDA480C61CB87E14"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ed8009\/Friendship-UP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7D9E0D071BBDBD19D976E55F8D870C04949EB147"
+    }
+  ]
+}

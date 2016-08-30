@@ -1,0 +1,26 @@
+PODS:
+  - MBProgressHUD (1.0.0)
+  - Reachability (3.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SVPullToRefresh (0.4.1)
+  - VK-ios-sdk (1.4.4)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - Reachability
+  - SDWebImage
+  - SVPullToRefresh
+  - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  VK-ios-sdk: 296c3be1bb45faf4d9f9a2ca69dcf6ec71d9d4df
+
+PODFILE CHECKSUM: 4639cfa9e2f9b0c4f399833530b4606ab99c38d1
+
+COCOAPODS: 1.0.1
