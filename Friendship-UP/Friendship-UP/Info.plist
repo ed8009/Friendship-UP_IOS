@@ -34,5 +34,26 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>vk5606535</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>vk5606535</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>vk</string>
+		<string>vk-share</string>
+		<string>vkauthorize</string>
+	</array>
+    <key>VK_APP_ID</key>
+    <integer>5606535</integer>
 </dict>
 </plist>
