@@ -10,10 +10,10 @@
 #import <VKSdk.h>
 #import "VKManager.h"
 #import "AIRVKSdkDelegate.h"
+#import "VkFriendsViewController.h"
+#import "UIViewController+FriendUP.h"
 
-
-
-@interface OnboardingAnimatedTutorialViewController () <AIRVKSdkDelegate2>
+@interface OnboardingAnimatedTutorialViewController ()
 
 @end
 
@@ -22,13 +22,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [VKManager sessionVK];
-}
-
-- (void)vkSdkShouldPresentViewController2:(UIViewController *)controller {
-    //[self presentViewController:controller animated:YES completion:nil];
-     [[[[[UIApplication sharedApplication] delegate] window] rootViewController]presentViewController:controller animated:YES completion:nil];
-
+    [VKManager sessionVK:^(RequestTaskType type, NSError *error) {
+        if (!error) {
+            if (type == VKRequestAuthorized) {
+                NSLog(@"VKAuthorizationAuthorized");
+                UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Friends" bundle:nil];
+                VkFriendsViewController *friendsController =[storyboard instantiateViewControllerWithIdentifier:@"VkFriendsViewController"];
+                [friendsController setModalPresentationStyle:UIModalPresentationFullScreen];
+                [friendsController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+                [self presentViewController:friendsController animated:YES completion:nil];
+            }
+            else if (type == VKRequestInitialized) {
+                NSLog(@"VKAuthorizationInitialized");
+            }
+        }
+        else {
+            NSLog(@"%@", error);
+        }
+    }];
 }
 
 - (IBAction)authorization:(id)sender {

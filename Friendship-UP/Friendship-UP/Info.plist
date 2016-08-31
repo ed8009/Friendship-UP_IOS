@@ -55,5 +55,10 @@
 	</array>
     <key>VK_APP_ID</key>
     <integer>5606535</integer>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 </dict>
 </plist>
