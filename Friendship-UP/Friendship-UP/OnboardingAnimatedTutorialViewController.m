@@ -11,8 +11,6 @@
 #import "VKManager.h"
 #import "AIRVKSdkDelegate.h"
 
-
-
 @interface OnboardingAnimatedTutorialViewController () <AIRVKSdkDelegate2>
 
 @end

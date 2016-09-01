@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetworkManager.h"
 
 @interface BaseRequestFactory : NSObject
+
++ (NSURLSessionDataTask *)requestCreateUserVkWith:(NSString *)idVK token:(NSString *)token completon:(NetworkRequestCompletion)completion;
 
 @end

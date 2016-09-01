@@ -10,4 +10,26 @@
 
 @implementation BaseRequestFactory
 
++ (NSURLSessionDataTask *)requestCreateUserVkWith:(NSString *)idVK token:(NSString *)token completon:(NetworkRequestCompletion)completion {
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    
+    NSMutableDictionary *parameters = [@{kIdVkKey: idVK, kUserTokenKey: token,} mutableCopy];
+    NSString *urlApi = [NSString stringWithFormat:kCreateUser, parameters];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:kDomen, urlApi]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error) {
+            completion(error, nil);
+        }
+        else {
+            completion(nil, responseObject);
+        }
+    }];
+    [dataTask resume];
+    
+    return dataTask;
+}
+
 @end

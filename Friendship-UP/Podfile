@@ -10,6 +10,7 @@ pod 'MBProgressHUD'
 pod 'SVPullToRefresh'
 pod 'SDWebImage'
 pod 'Reachability'
+pod 'AFNetworking', '~> 3.0'
 
 end
 
