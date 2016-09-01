@@ -12,7 +12,8 @@
 
 @implementation VKManager
 
-+ (void)sessionVK {
++ (void)sessionVK:(void (^)(RequestTaskType type, NSError *error))completion {
+
     NSArray *SCOPE = @[@"friends", @"email"];
     
     VKSdk* sdkInstance = [VKSdk initializeWithAppId:@"5606535"];
@@ -20,14 +21,19 @@
     [sdkInstance setUiDelegate:[AIRVKSdkDelegate sharedInstance]];
     
     [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
+        RequestTaskType type = VKRequestError;
         if (state == VKAuthorizationAuthorized) {
-            NSLog(@"VKAuthorizationAuthorized");
+            type = VKRequestAuthorized;
         }
         else if (state == VKAuthorizationInitialized) {
-            NSLog(@"VKAuthorizationInitialized");
+            type = VKRequestInitialized;
         }
         else if (state == VKAuthorizationError || error) {
-            NSLog(@"error: %@", error);
+            type = VKRequestError;
+        }
+        
+        if (completion) {
+            completion(type, error);
         }
     }];
 }
