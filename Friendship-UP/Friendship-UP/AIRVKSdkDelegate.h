@@ -9,15 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "VKSdk.h"
 
-@protocol AIRVKSdkDelegate2 <NSObject>
-
-- (void)vkSdkShouldPresentViewController2:(UIViewController *)controller;
-
-@end
-
 @interface AIRVKSdkDelegate : NSObject <VKSdkDelegate, VKSdkUIDelegate>
-
-@property (weak, nonatomic) id<AIRVKSdkDelegate2> delegate;
 
 + (id) sharedInstance;
 - (void)vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result;

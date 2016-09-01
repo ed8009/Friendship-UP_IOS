@@ -21,15 +21,15 @@ static AIRVKSdkDelegate* vkDelegateSharedInstance = nil;
 }
 
 - (void)vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result {
-    NSLog(@"result: %@. %lu",result, (unsigned long)result.state);
+    NSLog(@"vkSdkAccessAuthorizationFinishedWithResult: %@. %lu",result, (unsigned long)result.state);
     if( result.error == nil ) {
         /* VKUser is not part of this result, it's available in 'vkSdkAuthorizationStateUpdatedWithResult' */
         //NSString* tokenJSON = [MPStringUtils getJSONString:[VKAccessTokenUtils toJSON:result.token]];
-        NSLog(@"%@", result);
+        NSLog(@"vkSdkAccessAuthorizationFinishedWithResult: %@", result);
 
     } else {
         // Even when cancelled
-        NSLog(@"%@", result.error.localizedDescription);
+        NSLog(@"vkSdkAccessAuthorizationFinishedWithResult: %@", result.error.localizedDescription);
     }
 }
 
@@ -40,12 +40,12 @@ static AIRVKSdkDelegate* vkDelegateSharedInstance = nil;
 
 
 - (void)vkSdkAuthorizationStateUpdatedWithResult:(VKAuthorizationResult *)result {
-    NSLog(@"%@", result.user);
+    NSLog(@"vkSdkAuthorizationStateUpdatedWithResult: %@", result.user);
 }
 
 
 - (void)vkSdkAccessTokenUpdated:(VKAccessToken *)newToken oldToken:(VKAccessToken *)oldToken {
-    NSLog(@"vkSdkAccessTokenUpdated. newToken: %@", newToken);
+    NSLog(@"vkSdkAccessTokenUpdated. newToken: %@", newToken.accessToken);
    // NSString* tokenJSON = [MPStringUtils getJSONString:[VKAccessTokenUtils toJSON:newToken]];
 }
 
@@ -57,14 +57,11 @@ static AIRVKSdkDelegate* vkDelegateSharedInstance = nil;
 
 - (void)vkSdkShouldPresentViewController:(UIViewController *)controller {
     NSLog(@"vkSdkShouldPresentViewController");
-    [[[[[UIApplication sharedApplication] delegate] window] rootViewController]presentViewController:controller animated:YES completion:nil];
-   // [self.delegate vkSdkShouldPresentViewController2:controller];
-
-//    OnboardingAnimatedTutorialViewController *taleNavigationController = [[OnboardingAnimatedTutorialViewController alloc] init];
-//    [taleNavigationController presentViewController:controller animated:YES completion:nil];
-
+    UIViewController *vkViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];
+    [controller setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+    [vkViewController presentViewController:controller animated:YES completion:nil];
 }
-
 
 - (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
     NSLog(@"vkSdkNeedCaptchaEnter");

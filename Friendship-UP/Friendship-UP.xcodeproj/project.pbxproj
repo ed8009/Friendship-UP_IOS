@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8D6245CCA604341D1F9DDE9B /* libPods-Friendship-UP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEA9A4FE7D75D6AD73EF833 /* libPods-Friendship-UP.a */; };
+		A67A239A1D778BD400B852B5 /* Friends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67A23991D778BD300B852B5 /* Friends.storyboard */; };
+		A67A23A01D778C6A00B852B5 /* VkFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A239F1D778C6A00B852B5 /* VkFriendsViewController.m */; };
+		A67A23A31D778D5800B852B5 /* UIViewController+FriendUP.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A23A21D778D5800B852B5 /* UIViewController+FriendUP.m */; };
+		A67A23A61D778DEE00B852B5 /* UIStoryboard+FriendUP.m in Sources */ = {isa = PBXBuildFile; fileRef = A67A23A51D778DEE00B852B5 /* UIStoryboard+FriendUP.m */; };
 		A6D368BC1D6FA6C60097CB3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368BB1D6FA6C60097CB3A /* main.m */; };
 		A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368BE1D6FA6C60097CB3A /* AppDelegate.m */; };
 		A6D368C71D6FA6C60097CB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D368C61D6FA6C60097CB3A /* Assets.xcassets */; };
@@ -23,6 +27,13 @@
 /* Begin PBXFileReference section */
 		0821623CDA11674290DECEC1 /* Pods-Friendship-UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friendship-UP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Friendship-UP/Pods-Friendship-UP.debug.xcconfig"; sourceTree = "<group>"; };
 		0DEA9A4FE7D75D6AD73EF833 /* libPods-Friendship-UP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Friendship-UP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67A23991D778BD300B852B5 /* Friends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Friends.storyboard; sourceTree = "<group>"; };
+		A67A239E1D778C6A00B852B5 /* VkFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkFriendsViewController.h; sourceTree = "<group>"; };
+		A67A239F1D778C6A00B852B5 /* VkFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkFriendsViewController.m; sourceTree = "<group>"; };
+		A67A23A11D778D5800B852B5 /* UIViewController+FriendUP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FriendUP.h"; sourceTree = "<group>"; };
+		A67A23A21D778D5800B852B5 /* UIViewController+FriendUP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FriendUP.m"; sourceTree = "<group>"; };
+		A67A23A41D778DEE00B852B5 /* UIStoryboard+FriendUP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+FriendUP.h"; sourceTree = "<group>"; };
+		A67A23A51D778DEE00B852B5 /* UIStoryboard+FriendUP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+FriendUP.m"; sourceTree = "<group>"; };
 		A6D368B71D6FA6C50097CB3A /* Friendship-UP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friendship-UP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D368BB1D6FA6C60097CB3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6D368BD1D6FA6C60097CB3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +75,16 @@
 				0DEA9A4FE7D75D6AD73EF833 /* libPods-Friendship-UP.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A67A23981D778BAF00B852B5 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				A67A23991D778BD300B852B5 /* Friends.storyboard */,
+				A67A239E1D778C6A00B852B5 /* VkFriendsViewController.h */,
+				A67A239F1D778C6A00B852B5 /* VkFriendsViewController.m */,
+			);
+			name = Friends;
 			sourceTree = "<group>";
 		};
 		A6D368AE1D6FA6C50097CB3A = {
@@ -138,6 +159,10 @@
 		A6D368D41D6FA7D70097CB3A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				A67A23A11D778D5800B852B5 /* UIViewController+FriendUP.h */,
+				A67A23A21D778D5800B852B5 /* UIViewController+FriendUP.m */,
+				A67A23A41D778DEE00B852B5 /* UIStoryboard+FriendUP.h */,
+				A67A23A51D778DEE00B852B5 /* UIStoryboard+FriendUP.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -169,6 +194,7 @@
 		A6D368D81D6FA8000097CB3A /* Views and Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A67A23981D778BAF00B852B5 /* Friends */,
 				A6D368DA1D6FA8720097CB3A /* Base Controllers */,
 				A6D368D91D6FA8540097CB3A /* Login Flow */,
 			);
@@ -292,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67A239A1D778BD400B852B5 /* Friends.storyboard in Resources */,
 				A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */,
 				A6D368CA1D6FA6C60097CB3A /* LaunchScreen.storyboard in Resources */,
 				A6D368C71D6FA6C60097CB3A /* Assets.xcassets in Resources */,
@@ -357,9 +384,12 @@
 				B5E90E391D74E4550094FE82 /* AIRVKSdkDelegate.m in Sources */,
 				A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */,
 				B5E90E3C1D74E75B0094FE82 /* VKManager.m in Sources */,
+				A67A23A31D778D5800B852B5 /* UIViewController+FriendUP.m in Sources */,
 				A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */,
 				A6D368BC1D6FA6C60097CB3A /* main.m in Sources */,
 				A6D368DF1D6FA9440097CB3A /* AccessManager.m in Sources */,
+				A67A23A01D778C6A00B852B5 /* VkFriendsViewController.m in Sources */,
+				A67A23A61D778DEE00B852B5 /* UIStoryboard+FriendUP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
