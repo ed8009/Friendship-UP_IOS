@@ -9,5 +9,15 @@
 #ifndef NetworkConstants_h
 #define NetworkConstants_h
 
+#pragma mark url
+
+static NSString *const kDomen = @"http://travel-app.ru/api/?api.%@";
+static NSString *const kCreateUser = @"createUserWithIdVk={%@}";
+
+
+#pragma mark key
+
+static NSString *const kIdVkKey = @"idVK";
+static NSString *const kUserTokenKey = @"token";
 
 #endif /* NetworkConstants_h */

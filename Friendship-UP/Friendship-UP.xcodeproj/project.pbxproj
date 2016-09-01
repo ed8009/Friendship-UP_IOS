@@ -16,7 +16,7 @@
 		A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368BE1D6FA6C60097CB3A /* AppDelegate.m */; };
 		A6D368C71D6FA6C60097CB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D368C61D6FA6C60097CB3A /* Assets.xcassets */; };
 		A6D368CA1D6FA6C60097CB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368C81D6FA6C60097CB3A /* LaunchScreen.storyboard */; };
-		A6D368DF1D6FA9440097CB3A /* AccessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368DE1D6FA9440097CB3A /* AccessManager.m */; };
+		A6D368DF1D6FA9440097CB3A /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368DE1D6FA9440097CB3A /* NetworkManager.m */; };
 		A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */; };
 		A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */; };
 		A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */; };
@@ -42,8 +42,8 @@
 		A6D368C91D6FA6C60097CB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6D368CB1D6FA6C60097CB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D368DC1D6FA91D0097CB3A /* NetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConstants.h; sourceTree = "<group>"; };
-		A6D368DD1D6FA9440097CB3A /* AccessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessManager.h; sourceTree = "<group>"; };
-		A6D368DE1D6FA9440097CB3A /* AccessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessManager.m; sourceTree = "<group>"; };
+		A6D368DD1D6FA9440097CB3A /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		A6D368DE1D6FA9440097CB3A /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		A6D368E11D6FA9AF0097CB3A /* BaseRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestFactory.h; sourceTree = "<group>"; };
 		A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestFactory.m; sourceTree = "<group>"; };
 		A6D368E41D6FAA230097CB3A /* DefaultsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultsConstants.h; sourceTree = "<group>"; };
@@ -226,8 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				A6D368DC1D6FA91D0097CB3A /* NetworkConstants.h */,
-				A6D368DD1D6FA9440097CB3A /* AccessManager.h */,
-				A6D368DE1D6FA9440097CB3A /* AccessManager.m */,
+				A6D368DD1D6FA9440097CB3A /* NetworkManager.h */,
+				A6D368DE1D6FA9440097CB3A /* NetworkManager.m */,
 			);
 			name = "Network Managers";
 			sourceTree = "<group>";
@@ -387,7 +387,7 @@
 				A67A23A31D778D5800B852B5 /* UIViewController+FriendUP.m in Sources */,
 				A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */,
 				A6D368BC1D6FA6C60097CB3A /* main.m in Sources */,
-				A6D368DF1D6FA9440097CB3A /* AccessManager.m in Sources */,
+				A6D368DF1D6FA9440097CB3A /* NetworkManager.m in Sources */,
 				A67A23A01D778C6A00B852B5 /* VkFriendsViewController.m in Sources */,
 				A67A23A61D778DEE00B852B5 /* UIStoryboard+FriendUP.m in Sources */,
 			);
