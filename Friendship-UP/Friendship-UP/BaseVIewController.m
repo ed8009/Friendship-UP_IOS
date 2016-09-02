@@ -1,18 +1,18 @@
 //
-//  VkFriendsViewController.m
+//  BaseVIewController.m
 //  Friendship-UP
 //
-//  Created by ed8009 on 01.09.16.
+//  Created by Distillery Mac on 02.09.16.
 //  Copyright © 2016 ed8009. All rights reserved.
 //
 
-#import "VkFriendsViewController.h"
+#import "BaseVIewController.h"
 
-@interface VkFriendsViewController ()
+@interface BaseVIewController ()
 
 @end
 
-@implementation VkFriendsViewController
+@implementation BaseVIewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,11 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)logout:(id)sender {
-    [VKManager logoutVK];
-    
 }
 
 /*

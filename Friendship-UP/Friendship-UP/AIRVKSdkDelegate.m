@@ -8,8 +8,13 @@
 
 #import "AIRVKSdkDelegate.h"
 #import "OnboardingAnimatedTutorialViewController.h"
+#import "BaseRequestFactory.h"
 
 static AIRVKSdkDelegate* vkDelegateSharedInstance = nil;
+
+@interface AIRVKSdkDelegate ()
+
+@end
 
 @implementation AIRVKSdkDelegate
 
@@ -22,10 +27,19 @@ static AIRVKSdkDelegate* vkDelegateSharedInstance = nil;
 
 - (void)vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result {
     NSLog(@"vkSdkAccessAuthorizationFinishedWithResult: %@. %lu",result, (unsigned long)result.state);
-    if( result.error == nil ) {
+    if(!result.error) {
         /* VKUser is not part of this result, it's available in 'vkSdkAuthorizationStateUpdatedWithResult' */
         //NSString* tokenJSON = [MPStringUtils getJSONString:[VKAccessTokenUtils toJSON:result.token]];
         NSLog(@"vkSdkAccessAuthorizationFinishedWithResult: %@", result);
+        
+        [BaseRequestFactory requestCreateUserWithVk:result.token.userId token:result.token.accessToken completon:^(NSError *error, id result) {
+            if (!error){
+                NSLog(@"%@", result);
+            }
+            else{
+                NSLog(@"%@", error);
+            }
+        }];
 
     } else {
         // Even when cancelled
@@ -75,5 +89,7 @@ static AIRVKSdkDelegate* vkDelegateSharedInstance = nil;
 
 - (void)vkSdkDidDismissViewController:(UIViewController *)controller {
     NSLog(@"vkSdkDidDismissViewController");
+    
+    
 }
 @end

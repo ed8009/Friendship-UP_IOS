@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseVIewController.h"
 
-@interface VkFriendsViewController : UIViewController
+@interface VkFriendsViewController : BaseVIewController
 
 @end

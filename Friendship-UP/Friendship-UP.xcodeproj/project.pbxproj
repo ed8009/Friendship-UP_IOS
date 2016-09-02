@@ -20,6 +20,7 @@
 		A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */; };
 		A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */; };
 		A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */; };
+		B5C843F21D78DFEA00B3D486 /* BaseVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */; };
 		B5E90E391D74E4550094FE82 /* AIRVKSdkDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E90E381D74E4550094FE82 /* AIRVKSdkDelegate.m */; };
 		B5E90E3C1D74E75B0094FE82 /* VKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E90E3B1D74E75B0094FE82 /* VKManager.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,8 @@
 		A6D368E61D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingAnimatedTutorialViewController.h; sourceTree = "<group>"; };
 		A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingAnimatedTutorialViewController.m; sourceTree = "<group>"; };
 		A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		B5C843F01D78DFEA00B3D486 /* BaseVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVIewController.h; sourceTree = "<group>"; };
+		B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVIewController.m; sourceTree = "<group>"; };
 		B5E90E371D74E4550094FE82 /* AIRVKSdkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRVKSdkDelegate.h; sourceTree = "<group>"; };
 		B5E90E381D74E4550094FE82 /* AIRVKSdkDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRVKSdkDelegate.m; sourceTree = "<group>"; };
 		B5E90E3A1D74E75B0094FE82 /* VKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKManager.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 		A6D368DA1D6FA8720097CB3A /* Base Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B5C843F01D78DFEA00B3D486 /* BaseVIewController.h */,
+				B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */,
 			);
 			name = "Base Controllers";
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 			files = (
 				A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */,
 				B5E90E391D74E4550094FE82 /* AIRVKSdkDelegate.m in Sources */,
+				B5C843F21D78DFEA00B3D486 /* BaseVIewController.m in Sources */,
 				A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */,
 				B5E90E3C1D74E75B0094FE82 /* VKManager.m in Sources */,
 				A67A23A31D778D5800B852B5 /* UIViewController+FriendUP.m in Sources */,

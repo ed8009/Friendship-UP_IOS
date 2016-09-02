@@ -10,12 +10,14 @@
 
 @implementation BaseRequestFactory
 
-+ (NSURLSessionDataTask *)requestCreateUserVkWith:(NSString *)idVK token:(NSString *)token completon:(NetworkRequestCompletion)completion {
++ (NSURLSessionDataTask *)requestCreateUserWithVk:(NSString *)idVK token:(NSString *)token completon:(NetworkRequestCompletion)completion {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    NSMutableDictionary *parameters = [@{kIdVkKey: idVK, kUserTokenKey: token,} mutableCopy];
-    NSString *urlApi = [NSString stringWithFormat:kCreateUser, parameters];
+    NSMutableDictionary *parameters = [@{kIdVkKey:idVK,kUserTokenKey:token,} mutableCopy];
+    NSString *str = [NSString stringWithFormat:@"""%@"":%@,""%@"":%@",kIdVkKey, idVK,kUserTokenKey,token];
+    NSString *urlApi = [NSString stringWithFormat:kCreateUser, str];
+    urlApi = [urlApi stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:kDomen, urlApi]];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
