@@ -10,7 +10,7 @@
 #import "UIStoryboard+FriendUP.h"
 
 static NSString * const ViewControllerNameOnboardingAnimatedTutorialViewController = @"OnboardingAnimatedTutorialViewController";
-static NSString * const ViewControllerVKFriendsViewController = @"VKFriendsViewController";
+static NSString * const ViewControllerVKFriendsViewController = @"VkFriendsViewController";
 
 @implementation UIViewController (FriendUP)
 

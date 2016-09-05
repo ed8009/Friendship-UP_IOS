@@ -7,13 +7,13 @@
 //
 
 #import "OnboardingAnimatedTutorialViewController.h"
-#import <VKSdk.h>
-#import "VKManager.h"
-#import "AIRVKSdkDelegate.h"
 #import "VkFriendsViewController.h"
 #import "UIViewController+FriendUP.h"
+#import "UserDataManager.h"
+#import "RequestsDispatcher.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
-@interface OnboardingAnimatedTutorialViewController ()
+@interface OnboardingAnimatedTutorialViewController () <VKSdkDelegate, VKSdkUIDelegate>
 
 @end
 
@@ -22,36 +22,71 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [VKManager sessionVK:^(RequestTaskType type, NSError *error) {
-        if (!error) {
-            if (type == VKRequestAuthorized) {
-                NSLog(@"VKAuthorizationAuthorized");
-                UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Friends" bundle:nil];
-                VkFriendsViewController *friendsController =[storyboard instantiateViewControllerWithIdentifier:@"VkFriendsViewController"];
-                [friendsController setModalPresentationStyle:UIModalPresentationFullScreen];
-                [friendsController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-                [self presentViewController:friendsController animated:YES completion:nil];
-            }
-            else if (type == VKRequestInitialized) {
-                NSLog(@"VKAuthorizationInitialized");
-            }
+    VKSdk* sdkInstance = [VKSdk initializeWithAppId:@"5606535"];
+    [sdkInstance registerDelegate:self];
+    [sdkInstance setUiDelegate:self];
+    
+    NSArray *SCOPE = @[@"friends", @"email"];
+
+    [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
+        if (state == VKAuthorizationAuthorized) {
+            NSLog(@"VKAuthorizationAuthorized");
+            [self presentFriendViewController];
         }
-        else {
+        else if (state == VKAuthorizationInitialized) {
+            NSLog(@"VKAuthorizationInitialized");
+        }
+        else if (state == VKAuthorizationError || error) {
             NSLog(@"%@", error);
         }
     }];
 }
 
 - (IBAction)authorization:(id)sender {
-    [VKManager authorizationVK];
-    
+    NSArray *SCOPE = @[@"friends", @"email"];
+    [VKSdk authorize:SCOPE ];
 }
 
-- (IBAction)logout:(id)sender {
-    [VKManager logoutVK];
-    
+- (void)presentFriendViewController {
+    VkFriendsViewController *friendsController = (VkFriendsViewController *)[UIViewController circlesFriends];
+    [friendsController setModalPresentationStyle:UIModalPresentationFullScreen];
+    [friendsController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    [self presentViewController:friendsController animated:YES completion:nil];
 }
 
+#pragma mark delegate vk
 
+- (void)vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result {
+    if(!result.error) {
+        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        RequestTask *loginRequest = [[UserDataManager sharedInstance] createUserWithId:result.token.userId token:result.token.accessToken completon:^(BOOL successed, NSError *error) {
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            if (successed) {
+                [self presentFriendViewController];
+            }
+            else {
+                NSLog(@"%@", error);
+            }
+        }];
+        [RequestsDispatcher performSingleRequest:loginRequest];
+        
+    } else {
+        NSLog(@"vkSdkAccessAuthorizationFinishedWithResult: %@", result.error.localizedDescription);
+    }
+}
+
+- (void)vkSdkUserAuthorizationFailed {
+    NSLog(@"vkSdkUserAuthorizationFailed");
+}
+
+- (void)vkSdkShouldPresentViewController:(UIViewController *)controller {
+    [controller setModalPresentationStyle:UIModalPresentationOverFullScreen];
+    [controller setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
+- (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
+    NSLog(@"vkSdkNeedCaptchaEnter");
+}
 
 @end

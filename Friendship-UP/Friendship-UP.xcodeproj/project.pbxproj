@@ -16,12 +16,18 @@
 		A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368BE1D6FA6C60097CB3A /* AppDelegate.m */; };
 		A6D368C71D6FA6C60097CB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D368C61D6FA6C60097CB3A /* Assets.xcassets */; };
 		A6D368CA1D6FA6C60097CB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368C81D6FA6C60097CB3A /* LaunchScreen.storyboard */; };
-		A6D368DF1D6FA9440097CB3A /* AccessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368DE1D6FA9440097CB3A /* AccessManager.m */; };
+		A6D368DF1D6FA9440097CB3A /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368DE1D6FA9440097CB3A /* NetworkManager.m */; };
 		A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */; };
 		A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */; };
 		A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */; };
-		B5E90E391D74E4550094FE82 /* AIRVKSdkDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E90E381D74E4550094FE82 /* AIRVKSdkDelegate.m */; };
-		B5E90E3C1D74E75B0094FE82 /* VKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E90E3B1D74E75B0094FE82 /* VKManager.m */; };
+		B5C843F21D78DFEA00B3D486 /* BaseVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */; };
+		B5C8D12B1D7D8E5500018A13 /* FriendUpURLRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D12A1D7D8E5500018A13 /* FriendUpURLRequestData.m */; };
+		B5C8D12E1D7D8FAE00018A13 /* UsersRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D12D1D7D8FAE00018A13 /* UsersRequestFactory.m */; };
+		B5C8D1321D7D969E00018A13 /* BaseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D1311D7D969E00018A13 /* BaseDataManager.m */; };
+		B5C8D1351D7D96ED00018A13 /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D1341D7D96ED00018A13 /* UserDataManager.m */; };
+		B5C8D1391D7D97E700018A13 /* RequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D1381D7D97E700018A13 /* RequestTask.m */; };
+		B5C8D13C1D7DAFA700018A13 /* RequestsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D13B1D7DAFA700018A13 /* RequestsDispatcher.m */; };
+		B5C8D1401D7E1F1B00018A13 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D13F1D7E1F1B00018A13 /* UIImage+ImageWithColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,18 +48,30 @@
 		A6D368C91D6FA6C60097CB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6D368CB1D6FA6C60097CB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D368DC1D6FA91D0097CB3A /* NetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConstants.h; sourceTree = "<group>"; };
-		A6D368DD1D6FA9440097CB3A /* AccessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessManager.h; sourceTree = "<group>"; };
-		A6D368DE1D6FA9440097CB3A /* AccessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessManager.m; sourceTree = "<group>"; };
+		A6D368DD1D6FA9440097CB3A /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		A6D368DE1D6FA9440097CB3A /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		A6D368E11D6FA9AF0097CB3A /* BaseRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestFactory.h; sourceTree = "<group>"; };
 		A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequestFactory.m; sourceTree = "<group>"; };
 		A6D368E41D6FAA230097CB3A /* DefaultsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultsConstants.h; sourceTree = "<group>"; };
 		A6D368E61D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingAnimatedTutorialViewController.h; sourceTree = "<group>"; };
 		A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingAnimatedTutorialViewController.m; sourceTree = "<group>"; };
 		A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		B5E90E371D74E4550094FE82 /* AIRVKSdkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRVKSdkDelegate.h; sourceTree = "<group>"; };
-		B5E90E381D74E4550094FE82 /* AIRVKSdkDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRVKSdkDelegate.m; sourceTree = "<group>"; };
-		B5E90E3A1D74E75B0094FE82 /* VKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKManager.h; sourceTree = "<group>"; };
-		B5E90E3B1D74E75B0094FE82 /* VKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKManager.m; sourceTree = "<group>"; };
+		B5C843F01D78DFEA00B3D486 /* BaseVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVIewController.h; sourceTree = "<group>"; };
+		B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVIewController.m; sourceTree = "<group>"; };
+		B5C8D1291D7D8E5500018A13 /* FriendUpURLRequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendUpURLRequestData.h; sourceTree = "<group>"; };
+		B5C8D12A1D7D8E5500018A13 /* FriendUpURLRequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendUpURLRequestData.m; sourceTree = "<group>"; };
+		B5C8D12C1D7D8FAE00018A13 /* UsersRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersRequestFactory.h; sourceTree = "<group>"; };
+		B5C8D12D1D7D8FAE00018A13 /* UsersRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersRequestFactory.m; sourceTree = "<group>"; };
+		B5C8D1301D7D969E00018A13 /* BaseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataManager.h; sourceTree = "<group>"; };
+		B5C8D1311D7D969E00018A13 /* BaseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataManager.m; sourceTree = "<group>"; };
+		B5C8D1331D7D96ED00018A13 /* UserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManager.h; sourceTree = "<group>"; };
+		B5C8D1341D7D96ED00018A13 /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
+		B5C8D1371D7D97E700018A13 /* RequestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestTask.h; sourceTree = "<group>"; };
+		B5C8D1381D7D97E700018A13 /* RequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTask.m; sourceTree = "<group>"; };
+		B5C8D13A1D7DAFA700018A13 /* RequestsDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestsDispatcher.h; sourceTree = "<group>"; };
+		B5C8D13B1D7DAFA700018A13 /* RequestsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestsDispatcher.m; sourceTree = "<group>"; };
+		B5C8D13E1D7E1F1B00018A13 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		B5C8D13F1D7E1F1B00018A13 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
 		E8B0602BB1698138778BC270 /* Pods-Friendship-UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friendship-UP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Friendship-UP/Pods-Friendship-UP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +181,8 @@
 				A67A23A21D778D5800B852B5 /* UIViewController+FriendUP.m */,
 				A67A23A41D778DEE00B852B5 /* UIStoryboard+FriendUP.h */,
 				A67A23A51D778DEE00B852B5 /* UIStoryboard+FriendUP.m */,
+				B5C8D13E1D7E1F1B00018A13 /* UIImage+ImageWithColor.h */,
+				B5C8D13F1D7E1F1B00018A13 /* UIImage+ImageWithColor.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -177,6 +197,7 @@
 		A6D368D61D6FA7EF0097CB3A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B5C8D12F1D7D968300018A13 /* Data Managers */,
 				A6D368DB1D6FA90A0097CB3A /* Network Managers */,
 				A6D368E01D6FA96B0097CB3A /* Request Factories */,
 			);
@@ -207,10 +228,6 @@
 				A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */,
 				A6D368E61D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.h */,
 				A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */,
-				B5E90E371D74E4550094FE82 /* AIRVKSdkDelegate.h */,
-				B5E90E381D74E4550094FE82 /* AIRVKSdkDelegate.m */,
-				B5E90E3A1D74E75B0094FE82 /* VKManager.h */,
-				B5E90E3B1D74E75B0094FE82 /* VKManager.m */,
 			);
 			name = "Login Flow";
 			sourceTree = "<group>";
@@ -218,6 +235,8 @@
 		A6D368DA1D6FA8720097CB3A /* Base Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B5C843F01D78DFEA00B3D486 /* BaseVIewController.h */,
+				B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */,
 			);
 			name = "Base Controllers";
 			sourceTree = "<group>";
@@ -226,8 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				A6D368DC1D6FA91D0097CB3A /* NetworkConstants.h */,
-				A6D368DD1D6FA9440097CB3A /* AccessManager.h */,
-				A6D368DE1D6FA9440097CB3A /* AccessManager.m */,
+				B5C8D1361D7D97DA00018A13 /* Server interaction */,
 			);
 			name = "Network Managers";
 			sourceTree = "<group>";
@@ -237,6 +255,10 @@
 			children = (
 				A6D368E11D6FA9AF0097CB3A /* BaseRequestFactory.h */,
 				A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */,
+				B5C8D1291D7D8E5500018A13 /* FriendUpURLRequestData.h */,
+				B5C8D12A1D7D8E5500018A13 /* FriendUpURLRequestData.m */,
+				B5C8D12C1D7D8FAE00018A13 /* UsersRequestFactory.h */,
+				B5C8D12D1D7D8FAE00018A13 /* UsersRequestFactory.m */,
 			);
 			name = "Request Factories";
 			sourceTree = "<group>";
@@ -246,6 +268,30 @@
 			children = (
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		B5C8D12F1D7D968300018A13 /* Data Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8D1301D7D969E00018A13 /* BaseDataManager.h */,
+				B5C8D1311D7D969E00018A13 /* BaseDataManager.m */,
+				B5C8D1331D7D96ED00018A13 /* UserDataManager.h */,
+				B5C8D1341D7D96ED00018A13 /* UserDataManager.m */,
+			);
+			name = "Data Managers";
+			sourceTree = "<group>";
+		};
+		B5C8D1361D7D97DA00018A13 /* Server interaction */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8D1371D7D97E700018A13 /* RequestTask.h */,
+				B5C8D1381D7D97E700018A13 /* RequestTask.m */,
+				B5C8D13A1D7DAFA700018A13 /* RequestsDispatcher.h */,
+				B5C8D13B1D7DAFA700018A13 /* RequestsDispatcher.m */,
+				A6D368DD1D6FA9440097CB3A /* NetworkManager.h */,
+				A6D368DE1D6FA9440097CB3A /* NetworkManager.m */,
+			);
+			name = "Server interaction";
 			sourceTree = "<group>";
 		};
 		BB6AD41B4816EC674C9E053B /* Pods */ = {
@@ -380,14 +426,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C8D1321D7D969E00018A13 /* BaseDataManager.m in Sources */,
 				A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */,
-				B5E90E391D74E4550094FE82 /* AIRVKSdkDelegate.m in Sources */,
+				B5C8D12E1D7D8FAE00018A13 /* UsersRequestFactory.m in Sources */,
+				B5C8D13C1D7DAFA700018A13 /* RequestsDispatcher.m in Sources */,
+				B5C8D1391D7D97E700018A13 /* RequestTask.m in Sources */,
+				B5C843F21D78DFEA00B3D486 /* BaseVIewController.m in Sources */,
 				A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */,
-				B5E90E3C1D74E75B0094FE82 /* VKManager.m in Sources */,
+				B5C8D1351D7D96ED00018A13 /* UserDataManager.m in Sources */,
+				B5C8D12B1D7D8E5500018A13 /* FriendUpURLRequestData.m in Sources */,
 				A67A23A31D778D5800B852B5 /* UIViewController+FriendUP.m in Sources */,
 				A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */,
 				A6D368BC1D6FA6C60097CB3A /* main.m in Sources */,
-				A6D368DF1D6FA9440097CB3A /* AccessManager.m in Sources */,
+				A6D368DF1D6FA9440097CB3A /* NetworkManager.m in Sources */,
+				B5C8D1401D7E1F1B00018A13 /* UIImage+ImageWithColor.m in Sources */,
 				A67A23A01D778C6A00B852B5 /* VkFriendsViewController.m in Sources */,
 				A67A23A61D778DEE00B852B5 /* UIStoryboard+FriendUP.m in Sources */,
 			);
