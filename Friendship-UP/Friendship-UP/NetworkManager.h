@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "NetworkConstants.h"
-#import "AFNetworking.h"
+#import "RequestTask.h"
 
 @interface NetworkManager : NSObject
 
-typedef void (^NetworkRequestCompletion)(NSError *error, id result);
++ (instancetype)sharedManager;
+
+- (NSURLSessionDataTask *)performNetworkRequest:(RequestTask *)requestTask;
 
 @end

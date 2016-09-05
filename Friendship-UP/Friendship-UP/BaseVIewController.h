@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <VKSdk.h>
-#import "VKManager.h"
 
 @interface BaseVIewController : UIViewController
 
