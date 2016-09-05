@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FriendUpURLRequestData.h"
+#import "NetworkConstants.h"
 
 @interface BaseRequestFactory : NSObject
 

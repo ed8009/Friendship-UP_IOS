@@ -6,8 +6,8 @@
 //  Copyright © 2016 ed8009. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseVIewController.h"
 
-@interface VkFriendsViewController : UIViewController
+@interface VkFriendsViewController : BaseVIewController
 
 @end

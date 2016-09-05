@@ -7,8 +7,9 @@
 //
 
 #import "VkFriendsViewController.h"
+#import "UIImage+ImageWithColor.h"
 
-@interface VkFriendsViewController ()
+@interface VkFriendsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -19,19 +20,23 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    UIColor *navBarColor = [UIColor redColor];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage resizeableImageWithColor:navBarColor] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.hidden = NO;
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)logout:(id)sender {
+    [VKSdk forceLogout];    
 }
-*/
+
 
 @end
