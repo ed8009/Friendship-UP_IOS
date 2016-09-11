@@ -14,4 +14,6 @@
 
 - (RequestTask *)createUserWithId:(NSString *)idVK token:(NSString *)token completon:(void (^)(BOOL successed, NSError *error))completion;
 
+- (void)getUserWithParameters:(NSDictionary *)param completon:(void (^)(NSDictionary *result, BOOL successed, NSError *error))completion;
+
 @end

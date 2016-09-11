@@ -15,6 +15,8 @@
 
 @interface OnboardingAnimatedTutorialViewController () <VKSdkDelegate, VKSdkUIDelegate>
 
+@property (strong, nonatomic) NSArray *scope;
+
 @end
 
 @implementation OnboardingAnimatedTutorialViewController
@@ -22,13 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.scope = @[@"friends", @"photos", @"status", @"wall"];
+    
     VKSdk* sdkInstance = [VKSdk initializeWithAppId:@"5606535"];
     [sdkInstance registerDelegate:self];
     [sdkInstance setUiDelegate:self];
     
-    NSArray *SCOPE = @[@"friends", @"email"];
-
-    [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
+    [VKSdk wakeUpSession:self.scope completeBlock:^(VKAuthorizationState state, NSError *error) {
         if (state == VKAuthorizationAuthorized) {
             NSLog(@"VKAuthorizationAuthorized");
             [self presentFriendViewController];
@@ -43,15 +45,15 @@
 }
 
 - (IBAction)authorization:(id)sender {
-    NSArray *SCOPE = @[@"friends", @"email"];
-    [VKSdk authorize:SCOPE ];
+    [VKSdk authorize:self.scope ];
 }
 
 - (void)presentFriendViewController {
     VkFriendsViewController *friendsController = (VkFriendsViewController *)[UIViewController circlesFriends];
-    [friendsController setModalPresentationStyle:UIModalPresentationFullScreen];
-    [friendsController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [self presentViewController:friendsController animated:YES completion:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:friendsController];
+    [navController setModalPresentationStyle:UIModalPresentationFullScreen];
+    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 #pragma mark delegate vk

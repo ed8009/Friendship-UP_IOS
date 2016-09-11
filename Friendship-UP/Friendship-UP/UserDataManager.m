@@ -50,4 +50,24 @@
     return [RequestTask taskWithRequestData:loginRequest completionBlock:completionBlock];
 }
 
+- (void)getUserWithParameters:(NSDictionary *)param completon:(void (^)(NSDictionary *, BOOL, NSError *))completion {
+    VKRequest * audioReq = [[VKApi users] get:param];
+    [audioReq executeWithResultBlock:^(VKResponse * response) {
+        if (completion) {
+            completion(response.json[0], YES, nil);
+        }
+    } errorBlock:^(NSError * error) {
+        if (error.code != VK_API_ERROR) {
+            [error.vkError.request repeat];
+        }
+        else {
+            NSLog(@"VK error: %@", error);
+        }
+        
+        if (completion) {
+            completion(nil, YES, nil);
+        }
+    }];
+}
+
 @end
