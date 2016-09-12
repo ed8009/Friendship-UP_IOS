@@ -20,6 +20,8 @@
 		A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */; };
 		A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */; };
 		A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */; };
+		B58893931D7F0D490027433D /* FriendDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B58893921D7F0D490027433D /* FriendDataManager.m */; };
+		B58893961D7F17B70027433D /* PhotosDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B58893951D7F17B70027433D /* PhotosDataManager.m */; };
 		B5C843F21D78DFEA00B3D486 /* BaseVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */; };
 		B5C8D12B1D7D8E5500018A13 /* FriendUpURLRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D12A1D7D8E5500018A13 /* FriendUpURLRequestData.m */; };
 		B5C8D12E1D7D8FAE00018A13 /* UsersRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D12D1D7D8FAE00018A13 /* UsersRequestFactory.m */; };
@@ -28,6 +30,7 @@
 		B5C8D1391D7D97E700018A13 /* RequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D1381D7D97E700018A13 /* RequestTask.m */; };
 		B5C8D13C1D7DAFA700018A13 /* RequestsDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D13B1D7DAFA700018A13 /* RequestsDispatcher.m */; };
 		B5C8D1401D7E1F1B00018A13 /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D13F1D7E1F1B00018A13 /* UIImage+ImageWithColor.m */; };
+		B5C8D1481D7ED0FA00018A13 /* FriendsGalleryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8D1471D7ED0FA00018A13 /* FriendsGalleryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,10 @@
 		A6D368E61D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingAnimatedTutorialViewController.h; sourceTree = "<group>"; };
 		A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingAnimatedTutorialViewController.m; sourceTree = "<group>"; };
 		A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		B58893911D7F0D490027433D /* FriendDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDataManager.h; sourceTree = "<group>"; };
+		B58893921D7F0D490027433D /* FriendDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDataManager.m; sourceTree = "<group>"; };
+		B58893941D7F17B70027433D /* PhotosDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosDataManager.h; sourceTree = "<group>"; };
+		B58893951D7F17B70027433D /* PhotosDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosDataManager.m; sourceTree = "<group>"; };
 		B5C843F01D78DFEA00B3D486 /* BaseVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVIewController.h; sourceTree = "<group>"; };
 		B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVIewController.m; sourceTree = "<group>"; };
 		B5C8D1291D7D8E5500018A13 /* FriendUpURLRequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendUpURLRequestData.h; sourceTree = "<group>"; };
@@ -72,6 +79,8 @@
 		B5C8D13B1D7DAFA700018A13 /* RequestsDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestsDispatcher.m; sourceTree = "<group>"; };
 		B5C8D13E1D7E1F1B00018A13 /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
 		B5C8D13F1D7E1F1B00018A13 /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		B5C8D1461D7ED0FA00018A13 /* FriendsGalleryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsGalleryCell.h; sourceTree = "<group>"; };
+		B5C8D1471D7ED0FA00018A13 /* FriendsGalleryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsGalleryCell.m; sourceTree = "<group>"; };
 		E8B0602BB1698138778BC270 /* Pods-Friendship-UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Friendship-UP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Friendship-UP/Pods-Friendship-UP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +179,7 @@
 				A6D368D61D6FA7EF0097CB3A /* Services */,
 				A6D368D71D6FA7FA0097CB3A /* Constants */,
 				A6D368D81D6FA8000097CB3A /* Views and Controllers */,
+				B5C8D1491D7ED54200018A13 /* Common Views */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -215,9 +225,9 @@
 		A6D368D81D6FA8000097CB3A /* Views and Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A67A23981D778BAF00B852B5 /* Friends */,
 				A6D368DA1D6FA8720097CB3A /* Base Controllers */,
 				A6D368D91D6FA8540097CB3A /* Login Flow */,
+				A67A23981D778BAF00B852B5 /* Friends */,
 			);
 			name = "Views and Controllers";
 			sourceTree = "<group>";
@@ -277,6 +287,10 @@
 				B5C8D1311D7D969E00018A13 /* BaseDataManager.m */,
 				B5C8D1331D7D96ED00018A13 /* UserDataManager.h */,
 				B5C8D1341D7D96ED00018A13 /* UserDataManager.m */,
+				B58893911D7F0D490027433D /* FriendDataManager.h */,
+				B58893921D7F0D490027433D /* FriendDataManager.m */,
+				B58893941D7F17B70027433D /* PhotosDataManager.h */,
+				B58893951D7F17B70027433D /* PhotosDataManager.m */,
 			);
 			name = "Data Managers";
 			sourceTree = "<group>";
@@ -292,6 +306,23 @@
 				A6D368DE1D6FA9440097CB3A /* NetworkManager.m */,
 			);
 			name = "Server interaction";
+			sourceTree = "<group>";
+		};
+		B5C8D1451D7ED0CE00018A13 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8D1461D7ED0FA00018A13 /* FriendsGalleryCell.h */,
+				B5C8D1471D7ED0FA00018A13 /* FriendsGalleryCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B5C8D1491D7ED54200018A13 /* Common Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8D1451D7ED0CE00018A13 /* TableViewCells */,
+			);
+			name = "Common Views";
 			sourceTree = "<group>";
 		};
 		BB6AD41B4816EC674C9E053B /* Pods */ = {
@@ -426,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58893961D7F17B70027433D /* PhotosDataManager.m in Sources */,
 				B5C8D1321D7D969E00018A13 /* BaseDataManager.m in Sources */,
 				A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */,
 				B5C8D12E1D7D8FAE00018A13 /* UsersRequestFactory.m in Sources */,
@@ -434,7 +466,9 @@
 				B5C843F21D78DFEA00B3D486 /* BaseVIewController.m in Sources */,
 				A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */,
 				B5C8D1351D7D96ED00018A13 /* UserDataManager.m in Sources */,
+				B5C8D1481D7ED0FA00018A13 /* FriendsGalleryCell.m in Sources */,
 				B5C8D12B1D7D8E5500018A13 /* FriendUpURLRequestData.m in Sources */,
+				B58893931D7F0D490027433D /* FriendDataManager.m in Sources */,
 				A67A23A31D778D5800B852B5 /* UIViewController+FriendUP.m in Sources */,
 				A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */,
 				A6D368BC1D6FA6C60097CB3A /* main.m in Sources */,

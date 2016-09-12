@@ -29,7 +29,6 @@ static NSString *const kResponseResultKey = @"result";
 static NSString *const kResponseMessageKey = @"message";
 static NSString *const kResponseStatusCodeKey = @"status code";
 
-
 #pragma mark - headers
 static NSString *const kHTTPHeaderContentType  = @"Content-Type";
 static NSString *const kHTTPHeaderContentValue = @"application/json; charset=utf-8";
@@ -42,7 +41,6 @@ static NSString *const kUsersServiceURL = @"/users";
 static NSString *const kUsersLoginServiceURL = @"/users/addUser";
 static NSString *const kUsersLogoutServiceURL = @"/users/logout";
 static NSString *const kUsersIdServiceURL = @"/users/%@";
-
 
 #pragma mark key
 static NSString *const kIdVkKey = @"idVK";

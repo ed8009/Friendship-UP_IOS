@@ -53,12 +53,14 @@
 		<string>vk-share</string>
 		<string>vkauthorize</string>
 	</array>
-    <key>VK_APP_ID</key>
-    <integer>5606535</integer>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-    </dict>
+	<key>VK_APP_ID</key>
+	<integer>5606535</integer>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
