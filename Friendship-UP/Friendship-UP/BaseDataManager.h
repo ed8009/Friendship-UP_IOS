@@ -7,6 +7,7 @@
 //
 
 #import "NetworkManager.h"
+#import <VKSdk.h>
 
 @interface BaseDataManager : NSObject
 
