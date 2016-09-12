@@ -45,14 +45,6 @@
                                                      [self handleResponseWithData:data response:response error:error requestTuple:requestTask];
                                                  }];
         }
-//        else if (requestTask.requestTaskType == RequestTaskTypeUpload) {
-//            sessionTask = [self.friendUpSession uploadTaskWithRequest:[NetworkManager uploadRequestWithRequestData:requestTask.requestData]
-//                                                            fromData:[NetworkManager httpBodyWithImageData:requestTask.requestData.data]
-//                                                   completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//                                                       [self handleResponseWithData:data response:response error:error requestTuple:requestTask];
-//                                                   }];
-   //     }
-        
         [sessionTask resume];
     }
     

@@ -12,7 +12,6 @@
 static NSString *const kParamFields   = @"fields";
 static NSString *const kParam   = @"photo_max_orig, common_count";
 
-
 @implementation FriendDataManager
 
 + (instancetype)sharedInstance {
@@ -21,7 +20,6 @@ static NSString *const kParam   = @"photo_max_orig, common_count";
     dispatch_once(&onceToken, ^{
         sharedInstance = [[FriendDataManager alloc] init];
     });
-    
     return sharedInstance;
 }
 
