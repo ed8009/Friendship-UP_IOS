@@ -20,6 +20,11 @@
 		A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E21D6FA9AF0097CB3A /* BaseRequestFactory.m */; };
 		A6D368E81D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */; };
 		A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */; };
+		B548063C1D8D760C00E23502 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B548063B1D8D760C00E23502 /* UserProfileViewController.m */; };
+		B548063E1D8D762000E23502 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B548063D1D8D762000E23502 /* UserProfile.storyboard */; };
+		B54806431D8D933100E23502 /* PersonalInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B54806421D8D933100E23502 /* PersonalInformationCell.m */; };
+		B54806471D8D944100E23502 /* UserPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B54806461D8D944100E23502 /* UserPhotoCell.m */; };
+		B548064A1D8D945000E23502 /* UserFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B54806491D8D945000E23502 /* UserFriendsCell.m */; };
 		B58893931D7F0D490027433D /* FriendDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B58893921D7F0D490027433D /* FriendDataManager.m */; };
 		B58893961D7F17B70027433D /* PhotosDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B58893951D7F17B70027433D /* PhotosDataManager.m */; };
 		B5C843F21D78DFEA00B3D486 /* BaseVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C843F11D78DFEA00B3D486 /* BaseVIewController.m */; };
@@ -59,6 +64,15 @@
 		A6D368E61D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnboardingAnimatedTutorialViewController.h; sourceTree = "<group>"; };
 		A6D368E71D6FAAD80097CB3A /* OnboardingAnimatedTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnboardingAnimatedTutorialViewController.m; sourceTree = "<group>"; };
 		A6D368E91D6FAB160097CB3A /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		B548063A1D8D760C00E23502 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
+		B548063B1D8D760C00E23502 /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
+		B548063D1D8D762000E23502 /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		B54806411D8D933100E23502 /* PersonalInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInformationCell.h; sourceTree = "<group>"; };
+		B54806421D8D933100E23502 /* PersonalInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInformationCell.m; sourceTree = "<group>"; };
+		B54806451D8D944100E23502 /* UserPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPhotoCell.h; sourceTree = "<group>"; };
+		B54806461D8D944100E23502 /* UserPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPhotoCell.m; sourceTree = "<group>"; };
+		B54806481D8D945000E23502 /* UserFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFriendsCell.h; sourceTree = "<group>"; };
+		B54806491D8D945000E23502 /* UserFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFriendsCell.m; sourceTree = "<group>"; };
 		B58893911D7F0D490027433D /* FriendDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDataManager.h; sourceTree = "<group>"; };
 		B58893921D7F0D490027433D /* FriendDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDataManager.m; sourceTree = "<group>"; };
 		B58893941D7F17B70027433D /* PhotosDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosDataManager.h; sourceTree = "<group>"; };
@@ -225,6 +239,7 @@
 		A6D368D81D6FA8000097CB3A /* Views and Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B54806381D8CA19100E23502 /* Users Profile */,
 				A6D368DA1D6FA8720097CB3A /* Base Controllers */,
 				A6D368D91D6FA8540097CB3A /* Login Flow */,
 				A67A23981D778BAF00B852B5 /* Friends */,
@@ -280,6 +295,38 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		B54806381D8CA19100E23502 /* Users Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B548063A1D8D760C00E23502 /* UserProfileViewController.h */,
+				B548063B1D8D760C00E23502 /* UserProfileViewController.m */,
+				B548063D1D8D762000E23502 /* UserProfile.storyboard */,
+			);
+			name = "Users Profile";
+			sourceTree = "<group>";
+		};
+		B548063F1D8D92E100E23502 /* FriendCells */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8D1461D7ED0FA00018A13 /* FriendsGalleryCell.h */,
+				B5C8D1471D7ED0FA00018A13 /* FriendsGalleryCell.m */,
+			);
+			name = FriendCells;
+			sourceTree = "<group>";
+		};
+		B54806401D8D92F900E23502 /* UserProfileCells */ = {
+			isa = PBXGroup;
+			children = (
+				B54806411D8D933100E23502 /* PersonalInformationCell.h */,
+				B54806421D8D933100E23502 /* PersonalInformationCell.m */,
+				B54806451D8D944100E23502 /* UserPhotoCell.h */,
+				B54806461D8D944100E23502 /* UserPhotoCell.m */,
+				B54806481D8D945000E23502 /* UserFriendsCell.h */,
+				B54806491D8D945000E23502 /* UserFriendsCell.m */,
+			);
+			name = UserProfileCells;
+			sourceTree = "<group>";
+		};
 		B5C8D12F1D7D968300018A13 /* Data Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,8 +358,8 @@
 		B5C8D1451D7ED0CE00018A13 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				B5C8D1461D7ED0FA00018A13 /* FriendsGalleryCell.h */,
-				B5C8D1471D7ED0FA00018A13 /* FriendsGalleryCell.m */,
+				B54806401D8D92F900E23502 /* UserProfileCells */,
+				B548063F1D8D92E100E23502 /* FriendCells */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -399,6 +446,7 @@
 				A6D368EA1D6FAB160097CB3A /* Onboarding.storyboard in Resources */,
 				A6D368CA1D6FA6C60097CB3A /* LaunchScreen.storyboard in Resources */,
 				A6D368C71D6FA6C60097CB3A /* Assets.xcassets in Resources */,
+				B548063E1D8D762000E23502 /* UserProfile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,12 +508,16 @@
 				B58893961D7F17B70027433D /* PhotosDataManager.m in Sources */,
 				B5C8D1321D7D969E00018A13 /* BaseDataManager.m in Sources */,
 				A6D368E31D6FA9AF0097CB3A /* BaseRequestFactory.m in Sources */,
+				B548064A1D8D945000E23502 /* UserFriendsCell.m in Sources */,
 				B5C8D12E1D7D8FAE00018A13 /* UsersRequestFactory.m in Sources */,
+				B54806431D8D933100E23502 /* PersonalInformationCell.m in Sources */,
 				B5C8D13C1D7DAFA700018A13 /* RequestsDispatcher.m in Sources */,
+				B548063C1D8D760C00E23502 /* UserProfileViewController.m in Sources */,
 				B5C8D1391D7D97E700018A13 /* RequestTask.m in Sources */,
 				B5C843F21D78DFEA00B3D486 /* BaseVIewController.m in Sources */,
 				A6D368BF1D6FA6C60097CB3A /* AppDelegate.m in Sources */,
 				B5C8D1351D7D96ED00018A13 /* UserDataManager.m in Sources */,
+				B54806471D8D944100E23502 /* UserPhotoCell.m in Sources */,
 				B5C8D1481D7ED0FA00018A13 /* FriendsGalleryCell.m in Sources */,
 				B5C8D12B1D7D8E5500018A13 /* FriendUpURLRequestData.m in Sources */,
 				B58893931D7F0D490027433D /* FriendDataManager.m in Sources */,

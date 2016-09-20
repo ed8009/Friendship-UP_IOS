@@ -11,8 +11,10 @@
 #import "FriendsGalleryCell.h"
 #import "FriendDataManager.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import "UserProfileViewController.h"
 
 static NSString *cellIdentifier = @"FriendsGallery";
+static NSString *const kItem = @"items";
 
 @interface VkFriendsViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -33,6 +35,10 @@ static NSString *cellIdentifier = @"FriendsGallery";
     [super viewDidLoad];
 
     [self getUserFriends];
+    
+    self.friendTableView.estimatedRowHeight = 400.0;
+    self.friendTableView.rowHeight = UITableViewAutomaticDimension;
+    
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(applicationBecomeActive)
@@ -76,10 +82,20 @@ static NSString *cellIdentifier = @"FriendsGallery";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell;
     FriendsGalleryCell *friendCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    [friendCell customizeCell:self.friends[@"items"][indexPath.row]];
+    [friendCell customizeCell:self.friends[kItem][indexPath.row]];
     cell = friendCell;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    FriendsGalleryCell *friendCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+
+    UIStoryboard *UserProfileStoryboard = [UIStoryboard storyboardWithName:@"UserProfile" bundle:[NSBundle mainBundle]];
+    UserProfileViewController *userProfileViewController = [UserProfileStoryboard instantiateViewControllerWithIdentifier:@"UserProfileViewController"];
+    
+    userProfileViewController.userObject = self.friends[kItem][indexPath.row];
+    [self.navigationController pushViewController:userProfileViewController animated:YES];
 }
 
 #pragma mark Action
